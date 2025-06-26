@@ -1,0 +1,55 @@
+/* Importing google fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap'); */
+
+/* default browser styles */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* Style for the header */
+header{
+    width: 100%; /*Full width of the page */
+    position: fixed; /* Fixe the navbar to the top of my page*/
+    top: 0; /* the space between the top of my page and my navbar*/
+    z-index: 1000; /* ensure navbar stays above other content*/
+}
+
+
+/* Style the navbar for glassmorphism */
+.navbar{
+    display: flex; /* arrange logo and menu in the same ligne*/
+    justify-content: space-between; /* Space between logo and menu*/
+    align-items: center; /*verticaly center items*/
+    padding: 15px 20px; /*space inside navbar*/
+    background: rgba(255, 255, 255, 0.1); /*semi-transparent white background*/
+    backdrop-filter: blur(10px); /* effect for glass look*/
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);   /*subble shadow for depth*/
+}
+
+/* Style for the logo link */
+.nav-logo{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the first part of my logo */
+.logo-text1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Style for the second part of my logo */
+.logo-text2{
+    font-size: 14;
+    color: #cccccc;
+}

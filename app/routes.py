@@ -1,8 +1,8 @@
-from flask import Blueprint
+from flask import Blueprint,render_template
 
 
 plan = Blueprint("blue",__name__)
 
 @plan.route('/')
 def home():
-    return 'this is my first website'
+    return render_template('base.html')

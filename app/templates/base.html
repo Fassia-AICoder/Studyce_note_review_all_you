@@ -1,0 +1,63 @@
+<!-- Base template for common layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+
+    <title>{% block title %}my base html{% endblock %}</title>
+</head>
+
+<!-- The body of my code  -->
+<body>
+     <!-- the header is used to define my introductory content -->
+    <header>
+        <!-- nav is used to holds navigation links -->
+        <nav class="navbar">  
+              <!-- The link for the logo  -->
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text1">Studyce</h2>
+                <span class="logo-text2">Note, Review, All you</span>
+            </a>
+            <!-- for menu in the navbar -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Note</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content%}
+        <img src="static/images/img.jpg" alt="">
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+</body>
+</html>
